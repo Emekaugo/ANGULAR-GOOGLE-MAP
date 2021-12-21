@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { GoogleMapsModule } from '@angular/google-maps';
+
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
@@ -47,9 +49,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { ZComponentComponent } from './components/z-component/z-component.component';
 import { ZDirectiveDirective } from './directives/z-directive.directive';
+import { GoogleMapsComponent } from './components/google-maps/google-maps.component';
 
 @NgModule({
-  declarations: [AppComponent, ZComponentComponent, ZDirectiveDirective],
+  declarations: [AppComponent, ZComponentComponent, ZDirectiveDirective, GoogleMapsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -91,6 +94,8 @@ import { ZDirectiveDirective } from './directives/z-directive.directive';
     MatStepperModule,
     MatPaginatorModule,
     MatFormFieldModule,
+
+    GoogleMapsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
