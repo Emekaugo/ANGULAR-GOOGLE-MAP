@@ -19,11 +19,11 @@ export class GoogleMapsComponent implements OnInit {
   center!: google.maps.LatLngLiteral;
   options: google.maps.MapOptions = {
     mapTypeId: 'hybrid',
-    zoomControl: false,
-    scrollwheel: false,
+    zoomControl: true,
+    scrollwheel: true,
     disableDoubleClickZoom: true,
-    maxZoom: 15,
-    minZoom: 8,
+    maxZoom: 50,
+    minZoom: 50,
   };
 
   ngOnInit() {
